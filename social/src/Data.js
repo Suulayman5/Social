@@ -50,7 +50,7 @@ export const Users =[
         username: "Eock Lee"
     },
 ];
-export const Post =[
+export const Posts =[
     {
         id: 1,
         desc: "imosuke imosuke imosuke",
