@@ -9,7 +9,7 @@ export default function Topbar() {
         </div>
           <div className="topbarCenter">
             <div className="searchBar">
-              {/* <Search className='searchIcon'/> */}
+              <Search className='searchIcon'/>
               <input placeholder='search for a friend'
                type="text" className="searchInput" />
             </div>
@@ -21,15 +21,15 @@ export default function Topbar() {
           </div>
           <div className="topbarIcons"> 
             <div className="topbarIconItem">
-              {/* <Person/> */}
+              <Person/>
               <span className="topbarIconBadge">1</span>
             </div>
             <div className="topbarIconItem">
-              {/* <Chat/> */}
+              <Chat/>
               <span className="topbarIconBadge">2</span>
             </div>
             <div className="topbarIconItem">
-              {/* <Notifications/> */}
+              <Notifications/>
               <span className="topbarIconBadge">1</span>
             </div> 
           </div>

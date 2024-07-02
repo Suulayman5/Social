@@ -1,68 +1,68 @@
 import './Sidebar.css'
-import {RssFeed ,Menu} from '@mui/material'
+import {RssFeed ,Menu,Group,Chat, HelpOutline,PlayCircleFilledOutlined,WorkOutline,Bookmark,Event,Message,School,}from "@mui/icons-material";
 export default function Sidebar() {
   return (
     <div className='sideBar'>
       <div className="sideBarWrapper">
         <ul className="sidebarList">
           <li className="sidebarListItem">
-            {/* <Menu className="sidebarIcon"/> */}
+            <RssFeed className="sidebarIcon"/>
             <span className="sidebarNamet">
               Feed
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <Chat className="sidebarIcon"/>
             <span className="sidebarName">
               Chat
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <PlayCircleFilledOutlined className="sidebarIcon"/>
             <span className="sidebarName">
               Videos
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <Group className="sidebarIcon"/>
             <span className="sidebarName">
               Groups
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <Bookmark className="sidebarIcon"/>
             <span className="sidebarName">
               Bookmarks
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <HelpOutline className="sidebarIcon"/>
             <span className="sidebarName">
               Questions
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <WorkOutline className="sidebarIcon"/>
             <span className="sidebarName">
               Jobs
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <Event className="sidebarIcon"/>
             <span className="sidebarName">
               Events
             </span>
 
           </li>
           <li className="sidebarListItem">
-            {/* <RssFeed className="sidebarIcon"/> */}
+            <School className="sidebarIcon"/>
             <span className="sidebarName">
               Courses
             </span>
