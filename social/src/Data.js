@@ -47,7 +47,7 @@ export const Users =[
     {
         id: 10,
         profilePicture: "assets/person/19410.jpg ",
-        username: "Eock Lee"
+        username: "Rock Lee"
     },
 ];
 export const Posts =[
@@ -72,7 +72,7 @@ export const Posts =[
         id: 3,
         desc: "Gambari gambari",
         photo: "assets/post/2149141322.jpg",
-        date: "47 mins ago",
+        date: "2 hours ago",
         userId: 3,
         like: 413,
         Comment: 121,
@@ -81,7 +81,7 @@ export const Posts =[
         id: 4,
         desc: "imosuke imosuke imosuke",
         photo: "assets/post/41168.jpg",
-        date: "25 mins ago",
+        date: "1 day ago",
         userId: 4,
         like: 443,
         Comment: 201,
@@ -97,7 +97,7 @@ export const Posts =[
     {
         id: 6,
         photo: "assets/post/2149141322.jpg",
-        date: "55 mins ago",
+        date: "2 hours ago",
         userId: 6,
         like: 403,
         Comment: 201,

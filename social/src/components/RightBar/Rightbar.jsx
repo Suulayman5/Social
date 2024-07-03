@@ -1,4 +1,6 @@
 import './Rightbar.css'
+import { Users } from '../../Data'
+import Online from '../online/Online'
 
 export default function Rightbar() {
   return (
@@ -11,97 +13,10 @@ export default function Rightbar() {
         <img className='rightbarAd' src='assets/post/2149141352.jpg'/>
         <h4 className='rightbarTitle'>Online Friends</h4>
         <ul className="rightbarFriendList">
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
-          <li className="rightbarFriend">
-            <div className="rightbarProfileContainer">
-              <img className='rightbarProfileImg' src="assets/person/46935.jpg" alt="" />
-              <span className="rightbarOnline"></span>
-            </div>
-            <span className="rightbarUsername">Gojo Satoru</span>
-          </li>
+          {Users.map((u =>(
+            <Online key={u.id} user= {u}/>
+          )))}
+          
         </ul>
       </div>
     </div>
